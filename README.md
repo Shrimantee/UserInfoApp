@@ -38,6 +38,38 @@ It is generated with your app's package id. Ideally, this hash key needs to be s
 The server then sends an SMS message that includes a verification code and the hash to identify the app.
 After OTP retrieval, the code should be sent back to the server and validates the phone number.
 
+# How to view code
+
+Java files are located at: 
+\UserInfoApp\app\src\main\java\com\shrimantee\userInfo
+
+### SplashActivity.java
+  
+  Splash activity displayed at application launch.
+
+### MainActivity.java
+
+ This is a sample sign up form where hints will be provided for email and phone number fields.
+ On retrieving the hint, associated fields with it like first name, last name, etc can be used to fill up the form
+ 
+### OTPActivity.java
+
+ This activity automatically retrieves OTP ( One-Time Passowrd) from SMS sent to the phone number provided in the sign-up form sample.
+ 
+### AppSignatureHashHelper.java 
+
+This is a helper class to generate your message hash to be included in your SMS message.Without the correct hash, the app won't receive the message callback.
+
+### DisplayActivity.java
+
+Final activity on successful retrieval of OTP from SMS
+
+
+XML files ( Layout files) are located at:
+\UserInfoApp\app\src\main\res\layout
+
+
+
 # How to run a sample
 Clone or download the project open it with Android Studio compile and run it will work.
 
