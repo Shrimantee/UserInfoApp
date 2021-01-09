@@ -3,6 +3,7 @@
 UserInfo App is an Android Project demonstrating two key features:
 
 1.Prompts the user to choose from the phone numbers/emails stored on the device and thereby avoid having to manually type a phone number.
+
 2.Retrieve One-Time Password (OTP) automatically from SMS which might be used for phone-number verification
 
 # Workflow
@@ -25,7 +26,9 @@ The SMS Retriever API is available only on Android devices with Play services ve
 
 The standard SMS format is given below.
 
-<#> Your ExampleApp code is: 123ABC78 FA+9qCX9VSu SMS always starts with <#> sign and has a hash key FA+9qCX9VSu to identify the app.
+<#> Your ExampleApp code is: 123ABC78 FA+9qCX9VSu 
+
+SMS always starts with <#> sign and has a hash key FA+9qCX9VSu to identify the app.
 It is generated with your app's package id. Ideally, this hash key needs to be shared with the verification server.
 The server then sends an SMS message that includes a verification code and the hash to identify the app.
 After OTP retrieval, the code should be sent back to the server and validates the phone number.
@@ -34,5 +37,7 @@ After OTP retrieval, the code should be sent back to the server and validates th
 Clone or download the project open it with Android Studio compile and run it will work.
 
 # Credits
-https://developers.google.com/identity/sms-retriever/overview https://developers.google.com/identity/smartlock-passwords/android/retrieve-hints
+https://developers.google.com/identity/sms-retriever/overview 
+
+https://developers.google.com/identity/smartlock-passwords/android/retrieve-hints
 
