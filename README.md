@@ -22,6 +22,11 @@ The app extracts the verification code ( OTP) from the SMS and fills the OTP fie
 # Prerequisites
 The SMS Retriever API is available only on Android devices with Play services version 10.2 and newer.
 
+# Permissions
+For demo purpose, the SMS is being sent from this app itself and verification is not implemented.
+
+So SMS permission have to be enabled before app launch from Settings.
+
 # Important
 
 The standard SMS format is given below.
